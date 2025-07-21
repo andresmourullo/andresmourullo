@@ -99,12 +99,16 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1160px) {
       .project-pair {
         flex-direction: column;
       }
       .project-half {
-        flex: 1 1 100%;
+        width: -webkit-fill-available;
+      }
+
+      video {
+        width: 8em;
       }
     }
   </style>
@@ -131,8 +135,12 @@
           SPA en Angular conectada a Supabase (PostgreSQL) para crear, mostrar y guardar preguntas con estadísticas. Toda la lógica de selección y visualización fue personalizada.
         </p>
         <div class="video-preview">
-          <video src="educativo.mp4" autoplay loop muted playsinline style="height: 100%; object-fit: cover;"></video>
+          <video autoplay loop muted playsinline style="height: 100%; object-fit: cover;">
+            <source src="educativo.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+          </video>
         </div>
+
       </div>
       <div class="project-half">
         <h3>Landing con reservas hotel rural</h3>
@@ -140,7 +148,10 @@
           Página en Angular para gestionar reservas con calendario y backend Laravel. Precios dinámicos por día, selección de fechas y validación desde servidor.
         </p>
         <div class="video-preview">
-          <video src="landing.mp4" autoplay loop muted playsinline style="height: 100%; object-fit: cover;"></video>
+          <video autoplay loop muted playsinline style="height: 100%; object-fit: cover;">
+            <source src="landing.mp4" type="video/mp4">
+            Tu navegador no soporta el video.
+          </video>
         </div>
       </div>
     </div>
